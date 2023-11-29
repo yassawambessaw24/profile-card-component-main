@@ -1,0 +1,131 @@
+:root {
+    --primary-clr-dark-cyan: hsl(185, 75%, 39%);
+    --primary-clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --primary-clr-dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --neutral-clr-dark-gray: hsl(0, 0%, 59%);
+
+    --fs-name-and-stats: 1.125rem;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--primary-clr-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 0.01rem);
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.top-pattern {
+    position: absolute;
+    top: -50%;
+    left: -30%;
+    z-index: -1;
+}
+
+.bottom-pattern {
+    position: absolute;
+    bottom: -50%;
+    right: -30%;
+    z-index: -1;
+}
+
+.card {
+    width: 400px;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0rem;
+}
+
+.card-pattern {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card article:first-child {
+    position: relative;
+}
+
+.card article:first-child div img {
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    transform: translate(-50%);
+}
+
+.victors-image img {
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+h2 {
+    margin-top: 3rem;
+    color: var(--primary-clr-very-dark-desaturated-blue);
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+span {
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+    color: var(--primary-clr-dark-cyan);
+    font-weight: var(--fw-regular);
+}
+
+.country {
+    text-align: center;
+    margin-top: 0.8rem;
+    color: var(--primary-clr-dark-cyan);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+}
+
+hr { 
+    color: var(--primary-clr-dark-cyan);
+    opacity: 50%;
+    margin-top: 2rem;
+}
+
+.flex-group {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.flex-items h3 {
+    color: var(--primary-clr-very-dark-desaturated-blue);
+    font-weight: var(--fw-bold);
+}
+
+.flex-items p {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--primary-clr-dark-cyan);
+}
